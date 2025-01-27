@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Professional Portfolio</title>
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2ecc71;
+            --dark-bg: #1a1a2e;
+            --card-bg: #16213e;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--dark-bg);
+            color: white;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .profile-info h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill-badge {
+            background-color: rgba(255,255,255,0.2);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8em;
+        }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .project-card {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            padding: 20px;
+            transition: transform 0.3s ease;
+            border: 1px solid #2c3e50;
+        }
+        .project-card:hover {
+            transform: scale(1.05);
+            border-color: var(--primary-color);
+        }
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .tech-tag {
+            background-color: rgba(52,152,219,0.2);
+            color: var(--primary-color);
+            padding: 3px 8px;
+            border-radius: 15px;
+            font-size: 0.7em;
+        }
+        .project-links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="profile-info">
+                <h1>Devendra Singh</h1>
+                <p>AI Developer | Data Scienctist | Software Engineer</p>
+                <div class="skills">
+                    <span class="skill-badge">Python</span>
+                    <span class="skill-badge">Django</span>
+                    <span class="skill-badge">Flask</span>
+                    <span class="skill-badge">Machine Learning</span>
+                    <span class="skill-badge">Deep Learning</span>
+                    <span class="skill-badge">NLP</span>
+                    <span class="skill-badge">Langchain</span>
+                    <span class="skill-badge">LLM's</span>
+                    <span class="skill-badge">GenAI</span>
+                    <span class="skill-badge">C++</span>
+                    
+                </div>
+            </div>
+        </header>
+
+        <section class="projects">
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Movie_Recommendation_System</h3>
+                    <p>Developed a movie recommendation system using machine learning techniques to analyze user preferences and suggest personalized movie choices. Utilized collaborative filtering and content-based filtering methods to enhance recommendation accuracy. Implemented data preprocessing and model evaluation for optimized performance.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Streamlit</span>
+                        <span class="tech-tag">Pycharm</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn">View Code</a>     
+                    </div>
+                </div>
+                <section class="projects">
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <h3>Spam Email Detection System</h3>
+                            <p>Developed an email spam detection system using machine learning algorithms to classify emails as spam or non-spam. Focused on feature extraction, data preprocessing, and model evaluation to ensure high accuracy and performance.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Streamlit</span>
+                                <span class="tech-tag">Pycharm</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn">View Code</a>     
+                            </div>
+                        </div>
+
+               
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+
